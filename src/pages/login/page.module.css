@@ -1,0 +1,34 @@
+.root {
+  display: grid;
+  place-items: center;
+  min-height: 100%;
+  padding: 24px 16px;
+  background: var(--gac-chat-background);
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--gac-surface);
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.title {
+  margin-top: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--gac-text);
+}
+
+.subtitle {
+  max-width: 320px;
+  color: var(--gac-text-secondary);
+}

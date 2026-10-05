@@ -1,0 +1,17 @@
+.root {
+  display: grid;
+  flex: 1;
+  place-items: center;
+  padding: 24px;
+}
+
+.hint {
+  margin: 0;
+  padding: 6px 14px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--gac-pill-text);
+  background: var(--gac-pill);
+  backdrop-filter: blur(8px);
+}

@@ -1,0 +1,85 @@
+/*
+ * Design tokens of both versions (prefix --gac = green-api chat).
+ * MAX: light theme "space" of web.max.ru, taken from its CSS bundle.
+ * Telegram: light theme of web.telegram.org/k, read with getComputedStyle.
+ * The active set is chosen by <html data-messenger>.
+ */
+:root,
+:root[data-messenger='max'] {
+  --gac-accent: #007aff;
+  --gac-accent-fade: #007aff29;
+  --gac-on-accent: #ffffff;
+  --gac-text: #060708;
+  --gac-text-secondary: #060708ad;
+  --gac-text-tertiary: #06070885;
+  --gac-surface: #ffffff;
+  --gac-surface-secondary: #f5f7fa;
+  --gac-surface-glass: #ffffffe0;
+  --gac-hover: #f6f6f6;
+  --gac-selected: #007aff14;
+  --gac-selected-text: #060708;
+  --gac-divider: #0c0d0e0f;
+  --gac-bubble-in: #ffffff;
+  --gac-bubble-in-text: #011c29;
+  --gac-bubble-in-meta: #011c2985;
+  --gac-bubble-out: #e9fdff;
+  --gac-bubble-out-text: #011c29;
+  --gac-bubble-out-meta: #0784b8;
+  --gac-bubble-shadow: #0c0d0e14;
+  --gac-read: #0784b8;
+  --gac-pill: #ffffffb8;
+  --gac-pill-text: #011c29ad;
+  --gac-chat-background: linear-gradient(160deg, #99d5d7 0%, #80bcff 100%);
+  --gac-danger: #ff303c;
+  --gac-positive: #1abe43;
+  --gac-warning: #ff9a4c;
+}
+
+:root[data-messenger='telegram'] {
+  --gac-accent: #3390ec;
+  --gac-accent-fade: #3390ec29;
+  --gac-on-accent: #ffffff;
+  --gac-text: #000000;
+  --gac-text-secondary: #707579;
+  --gac-text-tertiary: #707579b3;
+  --gac-surface: #ffffff;
+  --gac-surface-secondary: #f4f4f5;
+  --gac-surface-glass: #ffffffd9;
+  --gac-hover: #f4f4f5;
+  --gac-selected: #3390ec;
+  --gac-selected-text: #ffffff;
+  --gac-divider: #dfe1e5;
+  --gac-bubble-in: #ffffff;
+  --gac-bubble-in-text: #000000;
+  --gac-bubble-in-meta: #707579;
+  --gac-bubble-out: #e3fee0;
+  --gac-bubble-out-text: #000000;
+  --gac-bubble-out-meta: #5ca853;
+  --gac-bubble-shadow: #72727233;
+  --gac-read: #5ca853;
+  --gac-pill: #0000003d;
+  --gac-pill-text: #ffffff;
+  --gac-chat-background: linear-gradient(
+    135deg,
+    #dbddbb 0%,
+    #6ba587 35%,
+    #d5d88d 70%,
+    #88b884 100%
+  );
+  --gac-danger: #df3f40;
+  --gac-positive: #5cc85e;
+  --gac-warning: #fb8c00;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--gac-text);
+  background: var(--gac-surface-secondary);
+  -webkit-font-smoothing: antialiased;
+}
