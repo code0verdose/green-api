@@ -1,0 +1,12 @@
+.icon {
+  flex: none;
+  color: inherit;
+
+  &[data-status='read'] {
+    color: var(--gac-read);
+  }
+
+  &[data-status='failed'] {
+    color: var(--gac-danger);
+  }
+}

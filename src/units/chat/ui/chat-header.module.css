@@ -1,0 +1,36 @@
+.root {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  min-height: 60px;
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--gac-divider);
+  background: var(--gac-surface);
+}
+
+.back {
+  display: none;
+  color: var(--gac-accent);
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    display: inline-flex;
+  }
+}
+
+.titles {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--gac-text);
+}
+
+.subtitle {
+  color: var(--gac-text-secondary);
+}

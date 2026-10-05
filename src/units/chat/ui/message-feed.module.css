@@ -1,0 +1,26 @@
+.root {
+  flex: 1;
+  min-height: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 8px 16px 12px;
+}
+
+.empty {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 24px;
+  border-radius: 20px;
+  background: var(--gac-surface-glass);
+  backdrop-filter: blur(12px);
+}

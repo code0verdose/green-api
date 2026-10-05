@@ -1,0 +1,66 @@
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2px 0;
+
+  &[data-direction='outgoing'] {
+    align-items: flex-end;
+  }
+}
+
+.bubble {
+  position: relative;
+  max-width: min(560px, 82%);
+  padding: 6px 10px 6px 12px;
+  border-radius: 16px 16px 16px 4px;
+  color: var(--gac-bubble-in-text);
+  background: var(--gac-bubble-in);
+  box-shadow: 0 1px 1px var(--gac-bubble-shadow);
+
+  &[data-direction='outgoing'] {
+    border-radius: 16px 16px 4px;
+    color: var(--gac-bubble-out-text);
+    background: var(--gac-bubble-out);
+  }
+}
+
+.text {
+  display: inline;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.35;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+
+  .bubble[data-kind='unsupported'] & {
+    font-style: italic;
+    opacity: 0.75;
+  }
+}
+
+/* Floats the time into the last line like messengers do, without overlapping text. */
+.meta {
+  display: inline-flex;
+  float: right;
+  gap: 3px;
+  align-items: center;
+  margin: 6px 0 -4px 10px;
+  font-size: 12px;
+  line-height: 1;
+  color: var(--gac-bubble-in-meta);
+
+  .bubble[data-direction='outgoing'] & {
+    color: var(--gac-bubble-out-meta);
+  }
+}
+
+.failure {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  max-width: min(560px, 82%);
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--gac-danger);
+}

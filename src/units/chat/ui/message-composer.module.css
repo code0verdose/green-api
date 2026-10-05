@@ -1,0 +1,54 @@
+.root {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 8px 16px 16px;
+}
+
+.field {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  padding: 4px 14px;
+  border: 1px solid var(--gac-divider);
+  border-radius: 20px;
+  background: var(--gac-surface);
+  box-shadow: 0 1px 2px var(--gac-bubble-shadow);
+
+  &:focus-within {
+    border-color: var(--gac-accent);
+  }
+}
+
+.input {
+  padding: 6px 0;
+  font-size: 15px;
+  line-height: 1.35;
+  color: var(--gac-text);
+}
+
+.counter {
+  align-self: flex-end;
+  padding-bottom: 4px;
+  color: var(--gac-text-tertiary);
+
+  &[data-over] {
+    color: var(--gac-danger);
+  }
+}
+
+.send {
+  flex: none;
+  color: var(--gac-on-accent);
+  background: var(--gac-accent);
+
+  &:disabled,
+  &[data-disabled] {
+    color: var(--gac-text-tertiary);
+    background: var(--gac-surface);
+  }
+}

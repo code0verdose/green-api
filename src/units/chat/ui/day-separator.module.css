@@ -1,0 +1,18 @@
+.root {
+  position: sticky;
+  top: 8px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+.label {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gac-pill-text);
+  background: var(--gac-pill);
+  backdrop-filter: blur(8px);
+}

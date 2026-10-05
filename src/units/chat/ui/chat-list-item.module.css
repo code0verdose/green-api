@@ -1,0 +1,85 @@
+.root {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 12px;
+  color: var(--gac-text);
+  text-decoration: none;
+  transition: background-color 120ms ease;
+
+  &:hover {
+    background: var(--gac-hover);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--gac-accent);
+    outline-offset: -2px;
+  }
+
+  &[data-active] {
+    color: var(--gac-selected-text);
+    background: var(--gac-selected);
+  }
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  min-width: 0;
+}
+
+.title {
+  flex: 1;
+  min-width: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: inherit;
+}
+
+.time {
+  flex: none;
+  color: var(--gac-text-tertiary);
+
+  .root[data-active] & {
+    color: inherit;
+    opacity: 0.8;
+  }
+}
+
+.preview {
+  flex: 1;
+  min-width: 0;
+  color: var(--gac-text-secondary);
+
+  .root[data-active] & {
+    color: inherit;
+    opacity: 0.85;
+  }
+}
+
+.unread {
+  flex: none;
+  min-width: 22px;
+  color: var(--gac-on-accent);
+  background: var(--gac-accent);
+
+  .root[data-active] & {
+    color: var(--gac-accent);
+    background: var(--gac-on-accent);
+  }
+}
+
+/* On the accent background of the active chat, status ticks take the text colour. */
+.root[data-active] :global(svg[data-status]) {
+  color: inherit;
+}
