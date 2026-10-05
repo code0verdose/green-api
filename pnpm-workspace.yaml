@@ -1,0 +1,8 @@
+# Supply-chain guard: never resolve a version published less than 7 days ago.
+# Fresh releases are the window in which compromised packages are usually caught and yanked.
+minimumReleaseAge: 10080
+
+# Install scripts are denied unless listed here.
+# msw's postinstall only copies the browser service worker; tests use msw/node, so it is not needed.
+allowBuilds:
+  msw: false
