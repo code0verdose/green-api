@@ -1,0 +1,26 @@
+.root {
+  height: 100%;
+  padding: var(--mantine-spacing-xl);
+  text-align: center;
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  color: var(--gac-accent);
+  background: var(--gac-accent-fade);
+}
+
+.title {
+  font-size: var(--mantine-font-size-lg);
+  font-weight: 600;
+  color: var(--gac-text);
+}
+
+.description {
+  max-width: 320px;
+  color: var(--gac-text-secondary);
+}
