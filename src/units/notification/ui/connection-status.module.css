@@ -1,0 +1,27 @@
+.dot {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gac-text-tertiary);
+
+  &[data-tone='ok'] {
+    background: var(--gac-positive);
+  }
+
+  &[data-tone='warning'] {
+    background: var(--gac-warning);
+  }
+
+  &[data-tone='error'] {
+    background: var(--gac-danger);
+  }
+}
+
+.label {
+  color: var(--gac-text-secondary);
+
+  &[data-tone='error'] {
+    color: var(--gac-danger);
+  }
+}
