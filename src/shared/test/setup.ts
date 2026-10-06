@@ -39,7 +39,7 @@ class ResizeObserverStub {
 }
 window.ResizeObserver = ResizeObserverStub;
 
-beforeAll(() => mswServer.listen({ onUnhandledRequest: 'error' }));
+beforeAll(() => mswServer.listen({ onUnhandledFrame: 'error' }));
 // A test without a single assertion guards nothing.
 beforeEach(() => expect.hasAssertions());
 

@@ -2,7 +2,11 @@
 # Fresh releases are the window in which compromised packages are usually caught and yanked.
 minimumReleaseAge: 10080
 
-# Install scripts are denied unless listed here.
-# msw's postinstall only copies the browser service worker; tests use msw/node, so it is not needed.
-allowBuilds:
-  msw: false
+# Install scripts of dependencies are denied unless listed here, and none needs one.
+allowBuilds: {}
+
+# @vitest/mocker declares msw ^2 as an optional peer used only by Vitest browser mode. Tests here
+# run in jsdom through msw/node, so msw 3 is fine. Drop this once @vitest/mocker accepts ^3.
+peerDependencyRules:
+  allowedVersions:
+    '@vitest/mocker>msw': '3'
