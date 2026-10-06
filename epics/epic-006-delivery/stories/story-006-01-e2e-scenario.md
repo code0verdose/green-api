@@ -2,7 +2,7 @@
 id: STORY-006-01
 epic: EPIC-006
 title: E2E сценария ТЗ для MAX и Telegram
-status: review
+status: done
 ---
 
 # STORY-006-01 — E2E сценария ТЗ для MAX и Telegram

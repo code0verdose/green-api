@@ -35,7 +35,7 @@ Playwright; GitHub Actions (CI); токены тем MAX и Telegram. Публи
 | -------------------------------------------------------- | ---------------------------------------- | ------- |
 | [STORY-001-01](stories/story-001-01-app-skeleton.md)     | Каркас приложения по канону FSD          | done    |
 | [STORY-001-02](stories/story-001-02-messenger-themes.md) | Темы MAX и Telegram                      | done    |
-| [STORY-001-03](stories/story-001-03-ci.md)               | CI на push в main и каждый pull request  | review  |
+| [STORY-001-03](stories/story-001-03-ci.md)               | CI на push в main и каждый pull request  | done    |
 | [STORY-001-04](stories/story-001-04-publish.md)          | Публикация на сервере и домене владельца | backlog |
 
 ## Зависимости

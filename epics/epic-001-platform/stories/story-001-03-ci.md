@@ -2,7 +2,7 @@
 id: STORY-001-03
 epic: EPIC-001
 title: CI на push в main и каждый pull request
-status: review
+status: done
 ---
 
 # STORY-001-03 — CI на push в main и каждый pull request

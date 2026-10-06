@@ -1,13 +1,13 @@
 # Эпики — борд
 
-| ID                                     | Эпик                             | Статус      | Milestone | Прогресс                                                            |
-| -------------------------------------- | -------------------------------- | ----------- | --------- | ------------------------------------------------------------------- |
-| [EPIC-001](epic-001-platform/epic.md)  | Платформа и темы                 | review      | MVP       | 2/4 done; CI — после первого пуша, публикация — ждёт сервер и домен |
-| [EPIC-002](epic-002-session/epic.md)   | Вход по учётным данным GREEN-API | done        | MVP       | 4/4                                                                 |
-| [EPIC-003](epic-003-chats/epic.md)     | Чаты                             | done        | MVP       | 3/3                                                                 |
-| [EPIC-004](epic-004-sending/epic.md)   | Отправка сообщений               | done        | MVP       | 2/2                                                                 |
-| [EPIC-005](epic-005-receiving/epic.md) | Получение сообщений              | done        | MVP       | 3/3                                                                 |
-| [EPIC-006](epic-006-delivery/epic.md)  | Сдача                            | in-progress | MVP       | 0/2: e2e — после первого CI, README — после живого прогона          |
+| ID                                     | Эпик                             | Статус      | Milestone | Прогресс                                   |
+| -------------------------------------- | -------------------------------- | ----------- | --------- | ------------------------------------------ |
+| [EPIC-001](epic-001-platform/epic.md)  | Платформа и темы                 | review      | MVP       | 3/4 done; публикация — ждёт сервер и домен |
+| [EPIC-002](epic-002-session/epic.md)   | Вход по учётным данным GREEN-API | done        | MVP       | 4/4                                        |
+| [EPIC-003](epic-003-chats/epic.md)     | Чаты                             | done        | MVP       | 3/3                                        |
+| [EPIC-004](epic-004-sending/epic.md)   | Отправка сообщений               | done        | MVP       | 2/2                                        |
+| [EPIC-005](epic-005-receiving/epic.md) | Получение сообщений              | done        | MVP       | 3/3                                        |
+| [EPIC-006](epic-006-delivery/epic.md)  | Сдача                            | in-progress | MVP       | 1/2; README — ждёт живого прогона          |
 
 Статусы: `backlog → ready → in-progress → review → done`; `review` и `done` — только после
 зелёного commit-гейта. ID: эпик `EPIC-NNN`, история `STORY-NNN-XX`.

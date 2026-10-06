@@ -17,7 +17,7 @@ owner: frontend
 
 | ID                                                   | История                            | Статус      |
 | ---------------------------------------------------- | ---------------------------------- | ----------- |
-| [STORY-006-01](stories/story-006-01-e2e-scenario.md) | E2E сценария ТЗ для MAX и Telegram | review      |
+| [STORY-006-01](stories/story-006-01-e2e-scenario.md) | E2E сценария ТЗ для MAX и Telegram | done        |
 | [STORY-006-02](stories/story-006-02-readme-demo.md)  | README и скриншоты                 | in-progress |
 
 ## Зависимости
