@@ -13,6 +13,15 @@ updates:
       interval: weekly
     cooldown:
       default-days: 7
+    # Minor and patch updates travel together; every major gets its own PR, so one breaking
+    # release cannot hold the others back.
     groups:
-      dependencies:
-        patterns: ['*']
+      minor-and-patch:
+        update-types: [minor, patch]
+    ignore:
+      # typescript-eslint accepts TypeScript <6.1.0 only; widen when it does.
+      - dependency-name: typescript
+        versions: ['>=6.1.0']
+      # The Node typings follow the runtime pinned in .nvmrc, not the newest Node.
+      - dependency-name: '@types/node'
+        update-types: ['version-update:semver-major']
