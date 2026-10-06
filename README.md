@@ -44,7 +44,7 @@
 
 ## Быстрый старт
 
-Нужны **Node.js 22+** и **pnpm 12** (версия закреплена в `package.json`, проще всего через corepack).
+Нужны **Node.js 22.22.2+** (лучше последний 22.x) и **pnpm 12** (версия закреплена в `package.json`, проще всего через corepack).
 
 ```bash
 corepack enable
@@ -117,7 +117,8 @@ React 19 + TypeScript (strict), Mantine 9 + CSS Modules, TanStack Router и Quer
 - История — свой ключ `localStorage` на инстанс, разбор Zod-схемой по записям, защита от
   переполнения квоты.
 - Зависимости: pnpm с `minimumReleaseAge` 7 дней и запретом install-скриптов, `pnpm audit` — 0
-  уязвимостей; GitHub Actions закреплены по SHA, Dependabot с той же недельной выдержкой.
+  уязвимостей; GitHub Actions закреплены по SHA, раннеры — по версии, Dependabot с той же недельной
+  выдержкой и отдельным PR на каждый мажор.
 - Публиковать — только на отдельном домене: общий origin вроде `*.github.io` делит хранилище с
   чужими сайтами. Подробно — [ADR-0004](docs/architecture/adr/0004-credentials-and-history-storage.md).
 
